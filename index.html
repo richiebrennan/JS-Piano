@@ -1,0 +1,108 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JS Piano</title>
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-1.10.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="main.js"></script>
+</head>
+<body>
+    <div id="piano">
+        <div id="piano-top">
+            <div class="speaker-1">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="speaker-2">
+                <ul>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="buttons">
+                <ul>
+                    <li id="help-btn" class="help"></li>
+                </ul>
+                <p>Help</p>
+            </div>
+            <div id="name">
+                <h2>JS Keyboard</h2>
+            </div>
+        </div>
+            <div class="piano-keys">
+                <div data-key="65" data-note="C" class="key"><p>A</p></div>
+                    <div data-key="81" data-note="C#" class="bkey"><p>Q</p></div>
+                <div data-key="83" data-note="D" class="key"><p>S</p></div>
+                    <div data-key="87" data-note="D#" class="bkey"><p>W</p></div>
+                <div data-key="68" data-note="E" class="key"><p>D</p></div>
+                <div data-key="70" data-note="F" class="key"><p>F</p></div>
+                    <div data-key="82" data-note="F#" class="bkey"><p>R</p></div>
+                <div data-key="71" data-note="G" class="key"><p>G</p></div>
+                    <div data-key="84" data-note="G#" class="bkey"><p>T</p></div>
+                <div data-key="72" data-note="A" class="key"><p>H</p></div>
+                    <div data-key="89" data-note="A#" class="bkey"><p>Y</p></div>
+                <div data-key="74" data-note="B" class="key"><p>J</p></div>
+                <div data-key="75" data-note="C" class="key"><p>K</p></div>
+                    <div data-key="73" data-note="C#" class="bkey"><p>I</p></div>
+                <div data-key="76" data-note="D" class="key"><p>L</p></div>
+                    <div data-key="79" data-note="D#" class="bkey"><p>O</p></div>
+                <div data-key="186" data-note="E" class="key"><p>;</p></div>
+                <div data-key="222" data-note="F" class="key"><p>@</p></div>
+                    <div data-key="219" data-note="F#" class="bkey"><p>[</p></div>
+                <div data-key="220" data-note="G" class="key"><p>#</p></div>
+                    <div data-key="221" data-note="G#" class="bkey"><p>]</p></div>
+                <div data-key="13" data-note="A" class="key"><p>↵</p></div>
+                    <div data-key="8" data-note="A#" class="bkey"><p>←</p></div>
+                <div data-key="38" data-note="B" class="key"><p>↑</p></div>                     
+            </div>
+    </div>
+    
+    <div id="text">
+        <div id="head">
+            <h1>JS Piano Keyboard</h1>
+            <h2>A piano keyboard developed with HTML/CSS and Javascript</h2>
+        </div>
+        <div id="instructions">
+            <p>Use your keyboard to play.</p>
+            <p>Press the 'help' button to display the corresponding keys.</p>
+        </div>
+    </div>
+    
+    <audio id="65" data-key="65" src="notes/261-C.mp3"></audio>
+    <audio id="83" data-key="83" src="notes/293-D.mp3"></audio>
+    <audio id="68" data-key="68" src="notes/329-E.mp3"></audio>
+    <audio id="70" data-key="70" src="notes/349-F.mp3"></audio>
+    <audio id="71" data-key="71" src='notes/391-G.mp3'></audio>
+    <audio id="72" data-key="72" src="notes/440-A.mp3"></audio> 
+    <audio id="74" data-key="74" src="notes/495-B.mp3"></audio>
+    <audio id="75" data-key="75" src="notes/523-C.mp3"></audio>
+    <audio id="76" data-key="76" src="notes/587-D.mp3"></audio>
+    <audio id="186" data-key="186" src="notes/659-E.mp3"></audio>
+    <audio id="222" data-key="222" src="notes/698-F.mp3"></audio>
+    <audio id="220" data-key="220" src="notes/783-G.mp3"></audio>
+    <audio id="13" data-key="13" src="notes/880-A.mp3"></audio>
+    <audio id="38" data-key="38" src="notes/987-B.mp3"></audio>
+    
+    <audio id="81" data-key="81" src="notes/277-C-sharp.mp3"></audio>
+    <audio id="87" data-key="87" src="notes/311-D-sharp.mp3"></audio>
+    <audio id="82" data-key="82" src="notes/369F-sharp.mp3"></audio>
+    <audio id="84" data-key="84" src="notes/415-G-sharp.mp3"></audio>
+    <audio id="89" data-key="89" src="notes/466-A-sharp.mp3"></audio>
+    <audio id="73" data-key="73" src="notes/545-C-sharp.mp3"></audio>
+    <audio id="79" data-key="79" src="notes/622-D-sharp.mp3"></audio>
+    <audio id="219" data-key="219" src="notes/698-F-sharp.mp3"></audio>
+    <audio id="221" data-key="221" src="notes/830-G-sharp.mp3"></audio>
+    <audio id="8" data-key="8" src="notes/932-A-sharp.mp3"></audio>
+     
+</body>
+</html>
